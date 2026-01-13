@@ -1,0 +1,3 @@
+building NPV yearly maintenance: -7.711360385219589
+building NPV initial: -8.333961300457618
+building NPV renting: -5.1854967147052795
