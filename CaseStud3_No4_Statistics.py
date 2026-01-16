@@ -26,15 +26,15 @@ def getShelfValues(shelf):
     return df[shelf].tolist()
 
 def calcMean(values):
-    return sum(values) / len(values)
+    return round(sum(values) / len(values),3)
 
 def calcPopStandardDeviation(values):
     mean = calcMean(values)
-    return sqrt(sum((x - mean) ** 2 for x in values) / len(values))
+    return round(sqrt(sum((x - mean) ** 2 for x in values) / len(values)),3)
 
 def calcSampleStandardDeviation(values):
     mean = calcMean(values)
-    return sqrt(sum((x - mean) ** 2 for x in values) / (len(values) - 1))
+    return round(sqrt(sum((x - mean) ** 2 for x in values) / (len(values) - 1)),3)
 
 def plotBellCurve(shelf):
     values = getShelfValues(shelf)
@@ -55,7 +55,7 @@ def plotHistogram(shelf, subplot):
 
 # Main function to print results and plot
 if __name__ == "__main__":
-    fig, axes = plt.subplots(1, 3, figsize=(15, 5))
+    # fig, axes = plt.subplots(1, 3, figsize=(15, 5))
     
     for idx, shelf in enumerate(["Shelf 1", "Shelf 2", "Shelf 3"]):
         values = getShelfValues(shelf)
@@ -67,5 +67,10 @@ if __name__ == "__main__":
         # plotHistogram(shelf, axes[idx])
         plotBellCurve(shelf)
 
+    plt.xlabel('Yield')
+    plt.ylabel('Probability Density')
+    plt.title('Bell Curves for All Shelves')
+    plt.legend()
     plt.tight_layout()
     plt.show()
+    

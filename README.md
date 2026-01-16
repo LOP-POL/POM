@@ -437,10 +437,10 @@ Just tell me.
 
 Your code is plotting the **probability density function (PDF)** of a normal (Gaussian) distribution:
 
-[
+$$
 f(x) = \frac{1}{\sigma \sqrt{2\pi}}
 \exp!\left(-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^2\right)
-]
+$$
 
 ### Correspondence to Your Code
 
@@ -459,9 +459,9 @@ f(x) = \frac{1}{\sigma \sqrt{2\pi}}
 
 `shelf` is a **list of numerical observations**, for example monthly yields from a shelf.
 
-[
+$$
 {x_1, x_2, \ldots, x_n}
-]
+$$
 
 ---
 
@@ -471,9 +471,9 @@ f(x) = \frac{1}{\sigma \sqrt{2\pi}}
 mean = calcMean(values)
 ```
 
-[
+$$
 \mu = \frac{1}{n} \sum_{i=1}^{n} x_i
-]
+$$
 
 The mean determines the **center of the bell curve**.
 
@@ -485,9 +485,9 @@ The mean determines the **center of the bell curve**.
 std_dev = calcPopStandardDeviation(values)
 ```
 
-[
+$$
 \sigma = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (x_i - \mu)^2}
-]
+$$
 
 The standard deviation controls the **spread (width)** of the curve.
 
@@ -501,9 +501,9 @@ x = np.linspace(mean - 3*std_dev, mean + 3*std_dev, 100)
 
 Mathematically:
 
-[
+$$
 x \in [\mu - 3\sigma,\ \mu + 3\sigma]
-]
+$$
 
 This interval is chosen because:
 
@@ -523,10 +523,10 @@ y = (1/(std_dev * np.sqrt(2 * np.pi))) * np.exp(-0.5 * ((x - mean) / std_dev) **
 
 This evaluates:
 
-[
+$$
 y = f(x) = \frac{1}{\sigma \sqrt{2\pi}}
 \exp!\left(-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^2\right)
-]
+$$
 
 For each point ( x ), the formula computes the **height of the bell curve**.
 
@@ -556,11 +556,11 @@ The area under the curve equals **1**, meaning it represents a probability densi
 
 ## 4. Intuition
 
-* Higher ( \sigma ) → wider, flatter curve
-* Lower ( \sigma ) → narrower, taller curve
-* Shifting ( \mu ) → moves the curve left or right
+* Higher ( $\sigma$ ) → wider, flatter curve
+* Lower ( $\sigma$) → narrower, taller curve
+* Shifting ( $\mu$ ) → moves the curve left or right
 
-Your data determine only **two parameters** (( \mu, \sigma )), and the bell curve is then fully defined.
+Your data determine only **two parameters** (( $\mu, \sigma$ )), and the bell curve is then fully defined.
 
 ---
 
@@ -570,11 +570,3 @@ You are using the **population standard deviation**, which assumes the shelf dat
 If the shelf values are a **sample**, the sample standard deviation should be used instead.
 
 ---
-
-If you want, I can also:
-
-* Overlay this curve on a histogram of the shelf data
-* Explain when the normal assumption is justified
-* Show how to test normality (Shapiro–Wilk, Q-Q plot)
-
-Just tell me.
