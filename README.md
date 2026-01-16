@@ -299,3 +299,282 @@ Building NPV renting: <value>
 - The module uses functional programming with `reduce()` for aggregations
 - Results are appended to `records.txt` preserving all historical analyses
 - The comparison helps decision-makers choose between capital-intensive (buying) vs. operational-intensive (renting) strategies
+
+## Documentation for case study 3 No4
+Below is the **mathematical formulation** of what your code is doing, followed by a **step-by-step explanation** that maps directly to each line of the function.
+
+## 1. Mathematical Equation Used (Normal Distribution)
+
+Your code is plotting the **probability density function (PDF)** of a normal (Gaussian) distribution:
+
+$$f(x) = \frac{1}{\sigma \sqrt{2\pi}} \exp\left(-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^2\right)$$
+
+### Correspondence to Your Code
+
+| Mathematical Symbol | Code Variable |
+|---|---|
+| $\mu$ (mean) | `mean` |
+| $\sigma$ (population standard deviation) | `std_dev` |
+| $x$ | `x` |
+| $f(x)$ | `y` |
+
+---
+
+## 2. How the Bell Curve Is Constructed (Step by Step)
+
+### Step 1: Input Data
+
+`shelf` is a **list of numerical observations**, for example monthly yields from a shelf:
+
+$$\{x_1, x_2, \ldots, x_n\}$$
+
+---
+
+### Step 2: Compute the Mean
+
+```python
+mean = calcMean(values)
+```
+
+$$\mu = \frac{1}{n} \sum_{i=1}^{n} x_i$$
+
+The mean determines the **center of the bell curve**.
+
+---
+
+### Step 3: Compute the Population Standard Deviation
+
+```python
+std_dev = calcPopStandardDeviation(values)
+```
+
+$$\sigma = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (x_i - \mu)^2}$$
+
+The standard deviation controls the **spread (width)** of the curve.
+
+---
+
+### Step 4: Define the x-Range (±3σ Rule)
+
+```python
+x = np.linspace(mean - 3*std_dev, mean + 3*std_dev, 100)
+```
+
+Mathematically:
+
+$$x \in [\mu - 3\sigma,\ \mu + 3\sigma]$$
+
+This interval is chosen because:
+
+* ~68% of data lies within $\pm 1\sigma$
+* ~95% within $\pm 2\sigma$
+* ~99.7% within $\pm 3\sigma$
+
+Thus, nearly the **entire distribution** is captured.
+
+---
+
+### Step 5: Compute the Bell Curve Values
+
+```python
+y = (1/(std_dev * np.sqrt(2 * np.pi))) * np.exp(-0.5 * ((x - mean) / std_dev) ** 2)
+```
+
+This evaluates:
+
+$$y = f(x) = \frac{1}{\sigma \sqrt{2\pi}} \exp\left(-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^2\right)$$
+
+For each point $x$, the formula computes the **height of the bell curve**.
+
+---
+
+### Step 6: Plot the Curve
+
+```python
+plt.plot(x, y)
+```
+
+This produces the **smooth bell-shaped curve** centered at $\mu$, with width determined by $\sigma$.
+
+---
+
+## 3. Interpretation of the Bell Curve
+
+* The curve is **not a histogram** of your data
+* It is a **theoretical normal distribution** fitted using:
+  * empirical mean
+  * empirical population standard deviation
+
+The area under the curve equals **1**, meaning it represents a probability density.
+
+---
+
+## 4. Intuition
+
+* Higher $\sigma$ → wider, flatter curve
+* Lower $\sigma$ → narrower, taller curve
+* Shifting $\mu$ → moves the curve left or right
+
+Your data determine only **two parameters** ($\mu, \sigma$), and the bell curve is then fully defined.
+
+---
+
+## 5. Important Note
+
+You are using the **population standard deviation**, which assumes the shelf data represents the full population.
+If the shelf values are a **sample**, the sample standard deviation should be used instead.
+
+---
+
+If you want, I can also:
+
+* Overlay this curve on a histogram of the shelf data
+* Explain when the normal assumption is justified
+* Show how to test normality (Shapiro–Wilk, Q-Q plot)
+
+Just tell me.
+## 1. Mathematical Equation Used (Normal Distribution)
+
+Your code is plotting the **probability density function (PDF)** of a normal (Gaussian) distribution:
+
+[
+f(x) = \frac{1}{\sigma \sqrt{2\pi}}
+\exp!\left(-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^2\right)
+]
+
+### Correspondence to Your Code
+
+| Mathematical Symbol                        | Code Variable |
+| ------------------------------------------ | ------------- |
+| ( \mu ) (mean)                             | `mean`        |
+| ( \sigma ) (population standard deviation) | `std_dev`     |
+| ( x )                                      | `x`           |
+| ( f(x) )                                   | `y`           |
+
+---
+
+## 2. How the Bell Curve Is Constructed (Step by Step)
+
+### Step 1: Input Data
+
+`shelf` is a **list of numerical observations**, for example monthly yields from a shelf.
+
+[
+{x_1, x_2, \ldots, x_n}
+]
+
+---
+
+### Step 2: Compute the Mean
+
+```python
+mean = calcMean(values)
+```
+
+[
+\mu = \frac{1}{n} \sum_{i=1}^{n} x_i
+]
+
+The mean determines the **center of the bell curve**.
+
+---
+
+### Step 3: Compute the Population Standard Deviation
+
+```python
+std_dev = calcPopStandardDeviation(values)
+```
+
+[
+\sigma = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (x_i - \mu)^2}
+]
+
+The standard deviation controls the **spread (width)** of the curve.
+
+---
+
+### Step 4: Define the x-Range (±3σ Rule)
+
+```python
+x = np.linspace(mean - 3*std_dev, mean + 3*std_dev, 100)
+```
+
+Mathematically:
+
+[
+x \in [\mu - 3\sigma,\ \mu + 3\sigma]
+]
+
+This interval is chosen because:
+
+* ~68% of data lies within ( \pm 1\sigma )
+* ~95% within ( \pm 2\sigma )
+* ~99.7% within ( \pm 3\sigma )
+
+Thus, nearly the **entire distribution** is captured.
+
+---
+
+### Step 5: Compute the Bell Curve Values
+
+```python
+y = (1/(std_dev * np.sqrt(2 * np.pi))) * np.exp(-0.5 * ((x - mean) / std_dev) ** 2)
+```
+
+This evaluates:
+
+[
+y = f(x) = \frac{1}{\sigma \sqrt{2\pi}}
+\exp!\left(-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^2\right)
+]
+
+For each point ( x ), the formula computes the **height of the bell curve**.
+
+---
+
+### Step 6: Plot the Curve
+
+```python
+plt.plot(x, y)
+```
+
+This produces the **smooth bell-shaped curve** centered at ( \mu ), with width determined by ( \sigma ).
+
+---
+
+## 3. Interpretation of the Bell Curve
+
+* The curve is **not a histogram** of your data
+* It is a **theoretical normal distribution** fitted using:
+
+  * empirical mean
+  * empirical population standard deviation
+
+The area under the curve equals **1**, meaning it represents a probability density.
+
+---
+
+## 4. Intuition
+
+* Higher ( \sigma ) → wider, flatter curve
+* Lower ( \sigma ) → narrower, taller curve
+* Shifting ( \mu ) → moves the curve left or right
+
+Your data determine only **two parameters** (( \mu, \sigma )), and the bell curve is then fully defined.
+
+---
+
+## 5. Important Note
+
+You are using the **population standard deviation**, which assumes the shelf data represents the full population.
+If the shelf values are a **sample**, the sample standard deviation should be used instead.
+
+---
+
+If you want, I can also:
+
+* Overlay this curve on a histogram of the shelf data
+* Explain when the normal assumption is justified
+* Show how to test normality (Shapiro–Wilk, Q-Q plot)
+
+Just tell me.
