@@ -29,7 +29,11 @@ def organizeData():
 
     return activitiesDataframe
 
+
 activitiesDataframe = pd.DataFrame(organizeData())
+print(activitiesDataframe.head(9))
+print(activitiesDataframe.describe())
+print(activitiesDataframe.info())
 START = "A"
 END = "I"
 parallelParts = [""]

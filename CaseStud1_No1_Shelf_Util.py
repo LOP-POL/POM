@@ -76,36 +76,71 @@ def calcWorkers(value):
 def calcShelvesAuto():
     return
 
-def main(shelfA=int(sys.argv[1]),shelfB=int(sys.argv[2]),shelfC=int(sys.argv[3]), year=int(sys.argv[4])):
+def collectInputs():
+    result = []
+    for year in years:
+        result.append([int(x) for x in input(f"Shelves for {year}: ").split()])
+    return result
+    
+def main():
+    mode = "m"
+    if len(sys.argv) > 1:
+        mode = sys.argv[1]
+    else:
+        mode = ""
+    
+    # shelfA=int(sys.argv[1]),shelfB=int(sys.argv[2]),shelfC=int(sys.argv[3]), year=int(sys.argv[4])
     # print(sys.argv[1])
     # print(sys.argv)
     # print(shelfA)``
     # print(type(shelfA))
-    
-    value = [int(shelfA),int(shelfB),int(shelfC)]
-    year = int(year)
-    print(years[year])
-    print(value)
 
-    totalNumberOfGivenShelfs = reduce(lambda x,y : x + y, value )
-    projectedShelvesForThatYear = calcProjectedShelvesSize(year)
+    # collect inputs
+    inputs = []
+    if mode == "m":
+        inputs = collectInputs()
+        print(input)
+    elif mode == "s":
+        inputs.append([int(x) for x in input(f"Shelves for year (spaces between numbers, 3 0 2 0 , A B C year[idx]):\n ").split()])
+    else:
+        inputs = [
+        [3, 0, 2 ,0],
+        [1,1, 2, 1],
+        [1 ,1 ,2, 2],
+        [1 ,2, 1, 3],
+        [0, 2, 2, 4]]
+        print(input)
 
-    # print(f"Total Numbe of shelves you will use:{totalNumberOfGivenShelfs} \n")
-    # print(f" Number of shelves needed to meet projected target:{reduce(lambda x,y : x + y,projectedShelvesForThatYear)} ")
+    totalProfitsAndLoss = 0
+   
+    for i in inputs:
+        value = [i[0],i[1],i[2]]
+        year = i[3]
+        print(years[i[3]])
+        print(value[:3])
 
-    prof_Loss = calcProfitsAndLosses(value=value,idx=year)
-    workers = calcWorkers(value=value)
-    print(workers)
+        totalNumberOfGivenShelfs = reduce(lambda x,y : x + y, value )
+        projectedShelvesForThatYear = calcProjectedShelvesSize(year)
 
-    with open("records.txt",'a') as record:
-        record.write("\nA B C \n ")
-        record.write(f"Shelves \n {''.join(str(x) for x in value)}")
-        record.write(f"\nProfits and losses relative to projected \n {' '.join(str(x) for x in prof_Loss)}")
-        record.write("\nworkers technicians leaders\n")
-        record.write(f"{' '.join(str(x) for x in workers[0])} \n" + f"{' '.join(str(x) for x in workers[1])} \n" + f"{' '.join(str(x) for x in workers[2])}" )
-        record.close()
+        # print(f"Total Numbe of shelves you will use:{totalNumberOfGivenShelfs} \n")
+        # print(f" Number of shelves needed to meet projected target:{reduce(lambda x,y : x + y,projectedShelvesForThatYear)} ")
+
+        prof_Loss = calcProfitsAndLosses(value=value,idx=year)
         
+        totalProfitsAndLoss += round(reduce(lambda x,y:x + y,prof_Loss),3)
 
+
+        workers = calcWorkers(value=value)
+        print(workers)
+
+        with open("records.txt",'a') as record:
+            record.write("\nA B C \n ")
+            record.write(f"Shelves \n {''.join(str(x) for x in value)}")
+            record.write(f"\nProfits and losses relative to projected \n {' '.join(str(x) for x in prof_Loss)}")
+            record.write("\nworkers technicians leaders\n")
+            record.write(f"{' '.join(str(x) for x in workers[0])} \n" + f"{' '.join(str(x) for x in workers[1])} \n" + f"{' '.join(str(x) for x in workers[2])}" )
+            record.close()
+    print("Total Loss and Profit",totalProfitsAndLoss)
 if __name__ == '__main__':
     main()
 
