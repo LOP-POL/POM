@@ -36,8 +36,12 @@ matrix = [
     [0,0,0,0,1],
     [0,0,0,0,0],
 ]
+Edges = {("wc1","wc2"):4, 
+         ("wc1","wc5"):4,
+         ("wc2","wc4"):4,
+         ("wc1","wc2"):4}
 
-transportCost = 1
+
 
 # ---ASSUMPTIONS---
 # Assume all workcenters have same space and fit in

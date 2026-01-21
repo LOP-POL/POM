@@ -150,7 +150,7 @@ def calcBuildingNPVResInside(maintainYearly=False):
 #  This calculates the partial values of the NPV for each year 
 def calcPVsRenting():
     PVs = []
-    cashFlows = calcCashFlowsAverge() # Can be switched to average 
+    cashFlows = calcCashFlows() # Can be switched to average 
     cashOut = ((40000/10**6) * 12) + calcLabour()
     
     for i,v in enumerate(cashFlows.values()):
@@ -162,7 +162,7 @@ def calcPVsRenting():
 def calcPVsBuying():
     PVs = []
     maintenance = buying["buildingCosts"] * 0.15
-    for i,v in enumerate(calcCashFlowsAverge().values()):
+    for i,v in enumerate(calcCashFlows().values()):
         PVs.append((v - maintenance - calcLabour())/(1 + COMPOUDED_MONTHLY_DISCOUNT_RATE)**(i+1))
         print(PVs[i])
     return PVs

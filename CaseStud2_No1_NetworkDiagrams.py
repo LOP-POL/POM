@@ -94,8 +94,6 @@ def getListOfweights(item:list):
 def addUpWeights(item:list):
     return reduce(lambda x,y: x + y , getListOfweights(item))
 
-
-
 def calcPaths():
     keys = [i for i in Edges.keys()]
     branches = reduce(lambda i,j: i if len(i)>len(j) else j,Edges.values() )
