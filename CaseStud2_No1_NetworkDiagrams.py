@@ -29,7 +29,11 @@ def organizeData():
 
     return activitiesDataframe
 
+
 activitiesDataframe = pd.DataFrame(organizeData())
+print(activitiesDataframe.head(9))
+print(activitiesDataframe.describe())
+print(activitiesDataframe.info())
 START = "A"
 END = "I"
 parallelParts = [""]
@@ -89,8 +93,6 @@ def getListOfweights(item:list):
 
 def addUpWeights(item:list):
     return reduce(lambda x,y: x + y , getListOfweights(item))
-
-
 
 def calcPaths():
     keys = [i for i in Edges.keys()]

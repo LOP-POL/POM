@@ -1,3 +1,403 @@
 building NPV yearly maintenance: -7.711360385219589
 building NPV initial: -8.333961300457618
 building NPV renting: -5.1854967147052795
+
+A B C 
+ Shelves 
+ 302
+Profits and losses relative to projected 
+ 0.4 -0.1 -0.4
+workers technicians leaders
+15 4 3 
+0 3 0 
+8 4 2
+A B C 
+ Shelves 
+ 302
+Profits and losses relative to projected 
+ 0.0 0.0 0.2
+workers technicians leaders
+15 4 3 
+0 3 0 
+8 4 2
+A B C 
+ Shelves 
+ 202
+Profits and losses relative to projected 
+ -0.1 -0.1 -0.4
+workers technicians leaders
+10 4 2 
+0 3 0 
+8 4 2
+A B C 
+ Shelves 
+ 112
+Profits and losses relative to projected 
+ -0.3 0.0 0.2
+workers technicians leaders
+5 4 1 
+2 4 1 
+8 4 2
+A B C 
+ Shelves 
+ 122
+Profits and losses relative to projected 
+ 0.5 0.0 0.2
+workers technicians leaders
+5 4 1 
+5 4 2 
+8 4 2
+A B C 
+ Shelves 
+ 122
+Profits and losses relative to projected 
+ 0.0 0.1 -0.4
+workers technicians leaders
+5 4 1 
+5 4 2 
+8 4 2
+A B C 
+ Shelves 
+ 022
+Profits and losses relative to projected 
+ 0.0 0.0 0.2
+workers technicians leaders
+0 3 0 
+5 4 2 
+8 4 2
+A B C 
+ Shelves 
+ 302
+Profits and losses relative to projected 
+ 0.4 -0.1 -0.4
+workers technicians leaders
+15 4 3 
+0 3 0 
+8 4 2
+A B C 
+ Shelves 
+ 112
+Profits and losses relative to projected 
+ -0.6 0.2 -0.4
+workers technicians leaders
+5 4 1 
+2 4 1 
+8 4 2
+A B C 
+ Shelves 
+ 112
+Profits and losses relative to projected 
+ -0.6 0.2 -0.4
+workers technicians leaders
+5 4 1 
+2 4 1 
+8 4 2
+A B C 
+ Shelves 
+ 121
+Profits and losses relative to projected 
+ -0.6 0.5 -0.8
+workers technicians leaders
+5 4 1 
+5 4 2 
+4 4 1
+A B C 
+ Shelves 
+ 022
+Profits and losses relative to projected 
+ -1.1 0.5 -0.4
+workers technicians leaders
+0 3 0 
+5 4 2 
+8 4 2
+A B C 
+ Shelves 
+ 302
+Profits and losses relative to projected 
+ 0.0 0.0 0.2
+workers technicians leaders
+15 4 3 
+0 3 0 
+8 4 2
+A B C 
+ Shelves 
+ 112
+Profits and losses relative to projected 
+ -0.6 0.2 -0.4
+workers technicians leaders
+5 4 1 
+2 4 1 
+8 4 2
+A B C 
+ Shelves 
+ 112
+Profits and losses relative to projected 
+ -0.3 0.0 0.2
+workers technicians leaders
+5 4 1 
+2 4 1 
+8 4 2
+A B C 
+ Shelves 
+ 121
+Profits and losses relative to projected 
+ 0.0 0.1 -0.8
+workers technicians leaders
+5 4 1 
+5 4 2 
+4 4 1
+A B C 
+ Shelves 
+ 022
+Profits and losses relative to projected 
+ 0.0 0.0 0.2
+workers technicians leaders
+0 3 0 
+5 4 2 
+8 4 2
+A B C 
+ Shelves 
+ 302
+Profits and losses relative to projected 
+ 0.0 0.0 0.2
+workers technicians leaders
+15 4 3 
+0 3 0 
+8 4 2
+A B C 
+ Shelves 
+ 112
+Profits and losses relative to projected 
+ -0.6 0.2 -0.4
+workers technicians leaders
+5 4 1 
+2 4 1 
+8 4 2
+A B C 
+ Shelves 
+ 112
+Profits and losses relative to projected 
+ -0.3 0.0 0.2
+workers technicians leaders
+5 4 1 
+2 4 1 
+8 4 2
+A B C 
+ Shelves 
+ 121
+Profits and losses relative to projected 
+ 0.0 0.1 -0.8
+workers technicians leaders
+5 4 1 
+5 4 2 
+4 4 1
+A B C 
+ Shelves 
+ 022
+Profits and losses relative to projected 
+ 0.0 0.0 0.2
+workers technicians leaders
+0 3 0 
+5 4 2 
+8 4 2
+A B C 
+ Shelves 
+ 302
+Profits and losses relative to projected 
+ 0.0 0.0 0.2
+workers technicians leaders
+15 4 3 
+0 3 0 
+8 4 2
+A B C 
+ Shelves 
+ 112
+Profits and losses relative to projected 
+ -0.6 0.2 -0.4
+workers technicians leaders
+5 4 1 
+2 4 1 
+8 4 2
+A B C 
+ Shelves 
+ 112
+Profits and losses relative to projected 
+ -0.3 0.0 0.2
+workers technicians leaders
+5 4 1 
+2 4 1 
+8 4 2
+A B C 
+ Shelves 
+ 121
+Profits and losses relative to projected 
+ 0.0 0.1 -0.8
+workers technicians leaders
+5 4 1 
+5 4 2 
+4 4 1
+A B C 
+ Shelves 
+ 022
+Profits and losses relative to projected 
+ 0.0 0.0 0.2
+workers technicians leaders
+0 3 0 
+5 4 2 
+8 4 2
+A B C 
+ Shelves 
+ 302
+Profits and losses relative to projected 
+ 0.0 0.0 0.2
+workers technicians leaders
+15 4 3 
+0 3 0 
+8 4 2
+A B C 
+ Shelves 
+ 302
+Profits and losses relative to projected 
+ 0.0 0.0 0.2
+workers technicians leaders
+15 4 3 
+0 3 0 
+8 4 2
+A B C 
+ Shelves 
+ 202
+Profits and losses relative to projected 
+ -0.1 -0.1 -0.4
+workers technicians leaders
+10 4 2 
+0 3 0 
+8 4 2
+A B C 
+ Shelves 
+ 102
+Profits and losses relative to projected 
+ -0.3 -0.3 0.2
+workers technicians leaders
+5 4 1 
+0 3 0 
+8 4 2
+A B C 
+ Shelves 
+ 122
+Profits and losses relative to projected 
+ 0.0 0.1 -0.4
+workers technicians leaders
+5 4 1 
+5 4 2 
+8 4 2
+A B C 
+ Shelves 
+ 022
+Profits and losses relative to projected 
+ 0.0 0.0 0.2
+workers technicians leaders
+0 3 0 
+5 4 2 
+8 4 2building NPV yearly maintenance: -7.711360385219589
+building NPV initial: -8.333961300457618
+building NPV renting: -5.1854967147052795
+building NPV yearly maintenance: -7.711360385219589
+building NPV initial: -8.333961300457618
+building NPV renting: -5.1854967147052795
+ building res inside -7.862991855995927
+building NPV yearly maintenance: -7.711360385219589
+building NPV initial: -8.333961300457618
+building NPV renting: -5.1854967147052795
+ building res inside -7.862991855995927
+building NPV yearly maintenance: -7.711360385219589
+building NPV initial: -8.333961300457618
+building NPV renting: -5.1854967147052795
+ building res inside -7.862991855995927
+building NPV yearly maintenance: -7.711360385219589
+building NPV initial: -8.333961300457618
+building NPV renting: -5.1854967147052795
+ building res inside -7.862991855995927
+building NPV yearly maintenance: -7.711360385219589
+building NPV initial: -8.333961300457618
+building NPV renting: -5.1854967147052795
+ building res inside -7.862991855995927
+building NPV yearly maintenance: -8.524100293695785
+building NPV initial: -9.208961300457618
+building NPV renting: -10.874676074038657
+ building res inside -8.675731764472124
+building NPV yearly maintenance: -8.524100293695785
+building NPV initial: -9.208961300457618
+building NPV renting: -10.874676074038657
+ building res inside -8.675731764472124
+building NPV yearly maintenance: -8.524100293695785
+building NPV initial: -9.208961300457618
+building NPV renting: -10.874676074038657
+ building res inside -8.675731764472124
+building NPV yearly maintenance: -9.004468793115223
+building NPV initial: -9.208961300457618
+building NPV renting: -10.874676074038657
+ building res inside -9.156100263891561
+building NPV yearly maintenance: -9.004468793115223
+building NPV initial: -9.208961300457618
+building NPV renting: -11.365737039819683
+ building res inside -9.156100263891561
+building NPV yearly maintenance: -9.004468793115223
+building NPV initial: -9.208961300457618
+building NPV renting: -11.365737039819683
+ building res inside -9.156100263891561
+building NPV yearly maintenance: -9.004468793115223
+building NPV initial: -9.208961300457618
+building NPV renting: -6.489297588962502
+ building res inside -9.156100263891561
+building NPV yearly maintenance: -9.004468793115223
+building NPV initial: -9.208961300457618
+building NPV renting: -6.489297588962502
+ building res inside -9.156100263891561
+building NPV yearly maintenance: -9.004468793115223
+building NPV initial: -9.208961300457618
+building NPV renting: -6.489297588962502
+ building res inside -9.156100263891561
+building NPV yearly maintenance: -9.004468793115223
+building NPV initial: -9.208961300457618
+building NPV renting: -6.489297588962502
+ building res inside -9.156100263891561
+building NPV yearly maintenance: -9.004468793115223
+building NPV initial: -9.208961300457618
+building NPV renting: -6.489297588962502
+ building res inside -9.156100263891561
+building NPV yearly maintenance: -9.004468793115223
+building NPV initial: -9.208961300457618
+building NPV renting: -6.489297588962502
+ building res inside -9.156100263891561
+building NPV yearly maintenance: -9.004468793115223
+building NPV initial: -9.208961300457618
+building NPV renting: -6.489297588962502
+ building res inside -9.156100263891561
+building NPV yearly maintenance: -9.004468793115223
+building NPV initial: -9.208961300457618
+building NPV renting: -6.164201625572023
+ building res inside -8.801148555426542
+building NPV yearly maintenance: -9.004468793115223
+building NPV initial: -9.208961300457618
+building NPV renting: -6.164201625572023
+ building res inside -8.801148555426542
+building NPV yearly maintenance: -9.004468793115223
+building NPV initial: -9.208961300457618
+building NPV renting: -6.164201625572023
+ building res inside -8.801148555426542
+building NPV yearly maintenance: -9.004468793115223
+building NPV initial: -9.208961300457618
+building NPV renting: -6.164201625572023
+ building res inside -8.801148555426542
+building NPV yearly maintenance: -9.004468793115223
+building NPV initial: -9.208961300457618
+building NPV renting: -6.164201625572023
+ building res inside -6.526676493781473
+building NPV yearly maintenance: -9.004468793115223
+building NPV initial: -9.208961300457618
+building NPV renting: -6.164201625572023
+ building res inside -6.526676493781473
+building NPV yearly maintenance: -9.004468793115223
+building NPV initial: -9.208961300457618
+building NPV renting: -6.164201625572023
+ building res inside -6.526676493781473
