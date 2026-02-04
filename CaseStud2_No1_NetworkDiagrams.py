@@ -47,12 +47,12 @@ def orderVertices(orderedList: dict,activitiesDataframe):
             weights.update({(k,i):weight})
     return weights
 
-Edges = {"A":["B"],
-         "B":["G"],
-         "G":["C","E","H"],
+Edges = {"A":["B","E","G"],
+         "B":["C"],
+         "G":["H"],
          "E":["F"],
          "C":["D"],
-         "F":["D"],
+         "F":["I"],
          "H":["I"],
          "D":["I"]}
 
@@ -137,7 +137,10 @@ G.add_edges_from(edges)
 pos = nx.spring_layout(G) # positions for all nodes
 
 # nodes
-nx.draw_networkx_nodes(G,pos,node_size=700)
+
+nx.draw_networkx_nodes(G, pos, nodelist=['A'], node_color='green', node_size=700)
+nx.draw_networkx_nodes(G, pos, nodelist=['I'], node_color='red', node_size=700)
+nx.draw_networkx_nodes(G, pos, nodelist=[n for n in G.nodes() if n not in ['A', 'I']], node_size=700)
 
 # labels
 nx.draw_networkx_labels(G,pos,font_size=20,font_family='sans-serif')
